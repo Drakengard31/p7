@@ -1,19 +1,19 @@
 import { Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import Home from './pages/Home'
-import Properties from './pages/Properties'
-import About from './pages/About'
-import NotFound from './pages/NotFound'
+import Layout from '@components/layout/Layout.jsx'
+import Home from './pages/home/Home.jsx'
+import Properties from './pages/Property/Properties.jsx'
+import About from './pages/about/About.jsx'
+import NotFound from './notFound/NotFound.jsx'
 
 function App() {
     return (
         <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Layout />}> {/* Layout contient Header/Footer */}
                 <Route index element={<Home />} />
                 <Route path="properties" element={<Properties />} />
                 <Route path="about" element={<About />} />
-                <Route path="*" element={<NotFound />} /> {/* Route pour les pages non trouvées */}
             </Route>
+            <Route path="*" element={<NotFound />} /> {/* Route 404 */}
         </Routes>
     )
 }

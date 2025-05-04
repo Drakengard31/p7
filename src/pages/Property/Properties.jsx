@@ -4,13 +4,13 @@ import propertiesData from '../../data/properties.json';
 import './Properties.css';
 
 function Properties() {
-    const [properties, setProperties] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [properties, setProperties] = useState([]); // stocke la liste des propriétés
+    const [loading, setLoading] = useState(true); // indique si les données sont en cours
+    const [error, setError] = useState(null); // stocke les éventuelles erreurs
 
-    useEffect(() => {
+    useEffect(() => { //ici il s'exécute qu'une fois lors du montage du composant
         try {
-            setTimeout(() => {
+            setTimeout(() => { // simule un chargement asynchrone
                 setProperties(propertiesData);
                 setLoading(false);
             }, 1000); // Simulation d'un chargement API

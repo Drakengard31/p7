@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Card.css'; // N'oublie pas de créer ce fichier CSS
+import './Card.css';
 
 function Card({ id, title, cover }) {
     return (

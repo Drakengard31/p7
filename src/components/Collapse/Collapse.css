@@ -1,0 +1,78 @@
+.collapse {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.collapse-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.collapse-arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    transform: rotate(180deg); /* Flèche vers le bas par défaut */
+}
+
+.collapse-arrow.open {
+    transform: rotate(0deg); /* Flèche vers le haut quand ouvert */
+}
+
+.collapse-content {
+    background-color: #F6F6F6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    border-radius: 0 0 5px 5px;
+}
+
+.collapse-content.open {
+    max-height: 500px; /* Hauteur maximale quand ouvert */
+    padding: 20px;
+}
+
+.collapse-text {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.collapse-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.collapse-list-item {
+    color: #FF6060;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .collapse-title {
+        font-size: 13px;
+    }
+
+    .collapse-text {
+        font-size: 12px;
+    }
+
+    .collapse-content.open {
+        padding: 15px;
+    }
+}

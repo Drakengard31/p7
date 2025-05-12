@@ -64,15 +64,52 @@
 }
 
 @media (max-width: 768px) {
+    .collapse {
+        margin-bottom: 15px;
+    }
+
+    .collapse-header {
+        padding: 8px 15px;
+    }
+
     .collapse-title {
         font-size: 13px;
+    }
+
+    .collapse-content.open {
+        padding: 15px;
+        max-height: 300px;
     }
 
     .collapse-text {
         font-size: 12px;
     }
 
+    .collapse-list-item {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 375px) {
+    .collapse {
+        margin-bottom: 10px;
+    }
+
+    .collapse-header {
+        padding: 7px 10px;
+    }
+
+    .collapse-title {
+        font-size: 12px;
+    }
+
     .collapse-content.open {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .collapse-text {
+        font-size: 11px;
+        line-height: 1.4;
     }
 }

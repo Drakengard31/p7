@@ -11,8 +11,18 @@
 }
 
 @media (max-width: 768px) {
+    .about {
+        padding: 0;
+    }
+
     .about-collapses {
         width: 100%;
         margin: 20px auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-collapses {
+        margin: 15px auto;
     }
 }

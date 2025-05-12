@@ -128,3 +128,46 @@
 .header-link:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .banner {
+        height: 180px;
+        border-radius: 15px;
+        margin-bottom: 25px;
+    }
+
+    .banner img {
+        height: 180px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .banner {
+        height: 111px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .banner img {
+        height: 111px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+    .header-logo{
+        height: 46px;
+        margin-right: 50px;
+    }
+    .header-link{
+        font-size: 12px;
+    }
+    .header-nav {
+        gap: 15px;
+    }
+}

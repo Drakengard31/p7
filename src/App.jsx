@@ -16,7 +16,7 @@ function App() {
                 <Route path="about" element={<About />} /> {/* Page à propos (/about) */}
             </Route>
 
-            {/* Nouvelle route pour capturer spécifiquement /images et afficher NotFound */}
+            {/*NotFound */}
             <Route path="images/*" element={<NotFound />} /> {/* Capture /images et tous ses sous-chemins */}
 
             <Route path="*" element={<NotFound />} /> {/* Route 404 pour toutes les autres URL non définies */}

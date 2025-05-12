@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Collapse from '../../components/Collapse/Collapse';
+import Carousel from '../../components/Carousel/Carousel';
 import './PropertyDetails.css';
 import propertiesData from '../../data/properties.json';
 
@@ -50,10 +51,8 @@ function PropertyDetails() {
                         <p className="property-location">{property.location}</p>
                     </div>
 
-                    {/* Image principale */}
-                    <div className="property-cover">
-                        <img src={property.cover} alt={property.title} />
-                    </div>
+                    {/* Utilisation du carrousel au lieu de la simple image */}
+                    <Carousel pictures={property.pictures} />
 
                     {/* Sections pliables */}
                     <div className="property-collapses">

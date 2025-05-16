@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
-import './About.css'; // Nous allons créer ce fichier aussi
+import './About.css';
 import aboutBanner from '@assets/Mask Group2.png';
 
 export default function About() {

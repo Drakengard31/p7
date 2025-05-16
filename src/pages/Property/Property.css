@@ -1,3 +1,19 @@
+/* Styles pour la liste des propriétés */
+.properties {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Styles pour les détails d'une propriété */
 .property-details {
     width: 100%;
     max-width: 1240px;
@@ -56,6 +72,15 @@
 }
 
 @media (max-width: 768px) {
+    .properties {
+        padding: 0;
+    }
+
+    .properties-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
     .property-details {
         padding: 0;
     }
@@ -83,6 +108,11 @@
 }
 
 @media (max-width: 375px) {
+    .properties-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .property-title {
         font-size: 18px;
     }

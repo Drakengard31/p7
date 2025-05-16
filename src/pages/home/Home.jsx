@@ -1,4 +1,3 @@
-// 1. Importations des dépendances et composants
 import { useState, useEffect } from 'react'; // Hooks React
 import Banner from '../../components/Banner/Banner'; // Correction du chemin d'import
 import Card from '@components/Card/Card.jsx'; // Composant carte de propriété

@@ -22,8 +22,12 @@
 }
 
 .collapse-arrow {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='15' viewBox='0 0 24 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7268 14.1403L23.8566 11.9951L11.9283 0L0 11.9951L2.12983 14.1403L11.9283 4.29005L21.7268 14.1403Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
     transition: transform 0.3s ease;
-    display: inline-block;
     transform: rotate(180deg); /* Flèche vers le bas par défaut */
 }
 

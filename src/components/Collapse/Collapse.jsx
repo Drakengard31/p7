@@ -39,9 +39,7 @@ function Collapse({ title, content, isList = false, className = '' }) {
             {/* Barre de titre avec flèche */}
             <div className="collapse-header" onClick={toggleCollapse}>
                 <h2 className="collapse-title">{title}</h2>
-                <span className={`collapse-arrow ${isOpen ? 'open' : ''}`}>
-                    &#9650; {/* Symbole flèche vers le haut qui sera tourné avec CSS */}
-                </span>
+                <div className={`collapse-arrow ${isOpen ? 'open' : ''}`} />
             </div>
 
             {/* Contenu du collapse avec animation */}

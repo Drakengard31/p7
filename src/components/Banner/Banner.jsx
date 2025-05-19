@@ -2,7 +2,7 @@ import './Banner.css'  // Importe le fichier CSS spécifique au composant Banner
 
 function Banner({ image, title }) {  // Définit le composant avec 2 props : image et title
     return (
-        <div className="banner">  {/* Correction: banner-overlay → banner */}
+        <div className="banner">  {/* la banner */}
             <img
                 src={image} // Utilise la prop image au lieu d'un chemin en dur
                 alt="Bannière Kasa"

@@ -71,5 +71,6 @@
     .carousel-counter {
         font-size: 14px;
         bottom: 15px;
+        display: none;
     }
 }
